@@ -113,6 +113,17 @@
                     </td>
                     <td>{{ fecha | date: "MMMM - dd":"":idioma }}</td>
                 </tr>
+                <tr>
+                    <td>{{ nombre }}</td>
+                    <td>
+                        contrasena
+                        <br />
+                        <button (click)="activar = !activar" class="btn btn-outline-primary">
+              {{ activar ? "Desactivar" : "Activar" }}
+            </button>
+                    </td>
+                    <td>{{ nombre | contrasena: activar }}</td>
+                </tr>
             </tbody>
         </table>
 

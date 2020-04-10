@@ -23,6 +23,7 @@ export class AppComponent {
     },
   };
   idioma: string = 'es';
+  activar: boolean = true;
   videoUrl: string = 'https://www.youtube.com/embed/ZkAkgGwMhQo';
   valorPromesa = new Promise<string>((resolve, reject) => {
     setTimeout(() => {
