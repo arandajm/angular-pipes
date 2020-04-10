@@ -4,8 +4,10 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
 import locales from '@angular/common/locales/es';
+import localfr from '@angular/common/locales/fr';
 
 registerLocaleData(locales);
+registerLocaleData(localfr);
 
 @NgModule({
   declarations: [AppComponent],

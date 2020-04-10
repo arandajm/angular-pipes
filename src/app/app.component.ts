@@ -21,6 +21,7 @@ export class AppComponent {
       casa: 20,
     },
   };
+  idioma: string = 'es';
   valorPromesa = new Promise<string>((resolve, reject) => {
     setTimeout(() => {
       resolve('llego la data!');
