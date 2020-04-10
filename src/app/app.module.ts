@@ -5,12 +5,13 @@ import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
 import locales from '@angular/common/locales/es';
 import localfr from '@angular/common/locales/fr';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 
 registerLocaleData(locales);
 registerLocaleData(localfr);
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CapitalizadoPipe],
   imports: [BrowserModule],
   providers: [
     {
