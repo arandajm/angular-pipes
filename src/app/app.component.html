@@ -116,9 +116,9 @@
                 <tr>
                     <td>{{ nombre }}</td>
                     <td>
-                        contrasena
+                        contrasena: {{ activar }}
                         <br />
-                        <button (click)="activar = !activar" class="btn btn-outline-primary">
+                        <button (click)="activar = !activar" class="btn btn-outline-primary btn-block">
               {{ activar ? "Desactivar" : "Activar" }}
             </button>
                     </td>
@@ -128,11 +128,12 @@
         </table>
 
         <h4>Slice</h4>
+        <hr />
         <ul>
             <li *ngFor="let num of numeros | slice: 5:20">{{ num }}</li>
         </ul>
 
-        <h4>JSON</h4>
+        <h4 class="mt-5">JSON</h4>
         <hr />
         <div class="row mb-5">
             <div class="col">
